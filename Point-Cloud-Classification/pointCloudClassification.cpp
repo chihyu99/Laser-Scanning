@@ -98,7 +98,7 @@ int main() {
 
     std::vector<int> classId(numPoints);
 
-    for (int setIdx = 1; setIdx <= 1; ++setIdx) {
+    for (int setIdx = 1; setIdx <= 20; ++setIdx) {
         std::cout << "=== Set " << setIdx << " ===" << std::endl;
 
         ////////// Process one set //////////
