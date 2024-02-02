@@ -20,10 +20,9 @@
 pcl::PointCloud<pcl::PointXYZ>::Ptr readLAS(){
 
     // Read LAS file
-    std::string filePath = "/Users/chihyu/Desktop/Github_LiDAR/20200827_Riegl_Calib.las";
-    // std::string filePath;
-    // std::cout << "Path of the file to be processed: ";
-    // std::cin >> filePath;
+    std::string filePath;
+    std::cout << "Path of the file to be processed: ";
+    std::cin >> filePath;
 
     std::cout << "\nStart reading " << filePath << " ...\n\n";
 
@@ -126,9 +125,8 @@ int main() {
     ///////////////////////////////////
 
     // Number of nearest neighbors
-    int K = 101;
-    // std::cout << "\nNumber of nearest neighbors: ";
-    // std::cin >> K;
+    std::cout << "\nNumber of nearest neighbors: ";
+    std::cin >> K;
 
     // Separate the points into 20 + 1 sets
     int numPointsInOneSet = numPoints/20;
